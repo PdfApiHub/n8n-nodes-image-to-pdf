@@ -1,39 +1,51 @@
 # n8n-nodes-image-to-pdf
 
-> Convert JPG, PNG, or WebP images into PDF documents using PDF API Hub
+[![NPM Version](https://img.shields.io/npm/v/n8n-nodes-image-to-pdf.svg)](https://www.npmjs.com/package/n8n-nodes-image-to-pdf)
+[![License](https://img.shields.io/npm/l/n8n-nodes-image-to-pdf.svg)](LICENSE.md)
 
-This is an [n8n](https://n8n.io/) community node. It lets you use **[PDF API Hub](https://pdfapihub.com)** in your n8n workflows.
+> Convert JPG, PNG, or WebP images into PDF documents — with page size, orientation, and fit mode control.
 
-## Prerequisites
+This is an [n8n](https://n8n.io/) community node powered by **[PDF API Hub](https://pdfapihub.com)**.
 
-- **n8n** v1.0.0 or later
-- A **PDF API Hub** API key — [get one free](https://pdfapihub.com)
+---
 
-## Installation
+## 🚀 Install
 
-1. Go to **Settings → Community Nodes**
-2. Select **Install a community node**
-3. Enter `n8n-nodes-image-to-pdf`
-4. Agree to the risks and click **Install**
+1. Go to **Settings → Community Nodes** in n8n
+2. Enter `n8n-nodes-image-to-pdf`
+3. Click **Install**
 
-## Operations
+## 🔑 Setup
 
-- **PNG to PDF** — Convert PNG image(s) to PDF
-- **JPG to PDF** — Convert JPEG image(s) to PDF
-- **WebP to PDF** — Convert WebP image(s) to PDF
+Sign up at [pdfapihub.com](https://pdfapihub.com) → copy your API key → add to n8n credentials.
 
-## Credentials
+---
 
-You need a PDF API Hub API key to use this node:
+## ✨ Operations
 
-1. Sign up at [pdfapihub.com](https://pdfapihub.com)
-2. Copy your API key from the dashboard
-3. In n8n, create new **PDF API Hub API** credentials and paste your key
+- **PNG to PDF** — convert PNG image(s) to PDF
+- **JPG to PDF** — convert JPEG image(s) to PDF
+- **WebP to PDF** — convert WebP image(s) to PDF
 
-## Resources
+### Features
 
-- [PDF API Hub Documentation](https://pdfapihub.com/docs)
-- [n8n Community Nodes Documentation](https://docs.n8n.io/integrations/community-nodes/)
+| Parameter | Description |
+|-----------|-------------|
+| **Input Type** | URLs (up to 100), Base64, or Binary files |
+| **Page Size** | Original (native dimensions), A3–A5, Letter, Legal, Tabloid |
+| **Orientation** | Portrait or Landscape |
+| **Fit Mode** | **Fit** (preserve ratio), **Fill** (crop), **Stretch**, or **Original** (center) |
+| **Margin** | Uniform page margin in points (0–200) |
+| **Output Format** | URL, Base64, Both, or Binary File |
+
+---
+
+## 💡 Use Cases
+
+- **Photo albums** — combine vacation photos into a PDF booklet
+- **Scan compilation** — merge scanned pages into a single document
+- **Portfolio creation** — convert design images into a presentation PDF
+- **Documentation** — embed screenshots into PDF reports
 
 ## License
 
